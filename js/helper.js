@@ -13,12 +13,20 @@ These are HTML strings. As part of the course, you'll be using JavaScript functi
 replace the %data% placeholder text you see in them.
 */
 var HTMLheaderName = '<h1 id="name">%data%</h1>';
+<<<<<<< HEAD
 var HTMLheaderRole = '<span>%data%</span><hr/>';
+=======
+var HTMLheaderRole = '<span>%data%</span><hr>';
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
 
 var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
 var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
+<<<<<<< HEAD
 var HTMLlinkedin = '<li class="flex-item"><span class="orange-text">linkedIn</span><span class="white-text">%data%</span></li>';
+=======
+var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
 var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
 var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
@@ -97,12 +105,19 @@ https://developers.google.com/maps/documentation/javascript/reference
 */
 var map;    // declares a global map variable
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
 /*
 Start here! initializeMap() is called when page is loaded.
 */
 function initializeMap() {
 
+<<<<<<< HEAD
   console.log("Initializing Map")
+=======
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
   var locations;
 
   var mapOptions = {
@@ -115,6 +130,10 @@ function initializeMap() {
   */
   map = new google.maps.Map(document.querySelector('#map'), mapOptions);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
   /*
   locationFinder() returns an array of every location string from the JSONs
   written for bio, education, and work.
@@ -135,12 +154,17 @@ function initializeMap() {
 
     // iterates through work locations and appends each location to
     // the locations array
+<<<<<<< HEAD
     for (var job in work.companies) {
       locations.push(work.companies[job].location);
     }
 
     for(var loc in locations){
       console.log(locations[loc])
+=======
+    for (var job in work.jobs) {
+      locations.push(work.jobs[job].location);
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
     }
 
     return locations;
@@ -175,8 +199,12 @@ function initializeMap() {
 
     // hmmmm, I wonder what this is about...
     google.maps.event.addListener(marker, 'click', function() {
+<<<<<<< HEAD
       console.log("clicked on map");
       infoWindow.open(map, marker);
+=======
+      // your code goes here!
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
     });
 
     // this is where the pin actually gets added to the map.
@@ -244,6 +272,12 @@ window.addEventListener('load', initializeMap);
 // Vanilla JS way to listen for resizing of the window
 // and adjust map bounds
 window.addEventListener('resize', function(e) {
+<<<<<<< HEAD
   //Make sure the map bounds get updated on page resize
    map.fitBounds(mapBounds);
 });
+=======
+//  Make sure the map bounds get updated on page resize
+ map.fitBounds(mapBounds);
+});
+>>>>>>> bccc855c5b8009d33a2600a753850e44b3a00b8b
